@@ -46,7 +46,7 @@ redirect: 'follow'
 };
 
 
-const data = await fetch("http://localhost:3030/api/",requestOptions);
+const data = await fetch("https://vote-for-pets.herokuapp.com/api/",requestOptions);
 const result = await data.json();
 console.log(result[0].votes);
 
@@ -62,13 +62,13 @@ showAllVotes();
 
 
 ///
-const specialUrlCat = "http://localhost:3030/api/tP9eCA3nl6VeJBu9"
+const specialUrlCat = "https://vote-for-pets.herokuapp.com/api/tP9eCA3nl6VeJBu9"
 
-const specialUrlDog = "http://localhost:3030/api/b4mkpyQp3c2zhcXd"
+const specialUrlDog = "https://vote-for-pets.herokuapp.com/api/b4mkpyQp3c2zhcXd"
 
-const specialUrlBird = "http://localhost:3030/api/aWq4oGUP71nivULK"
+const specialUrlBird = "https://vote-for-pets.herokuapp.com/api/aWq4oGUP71nivULK"
 
-const specialUrlFish = "http://localhost:3030/api/PMgfiYc84P0FZwDb"
+const specialUrlFish = "https://vote-for-pets.herokuapp.com/api/PMgfiYc84P0FZwDb"
 
 // define a custom function to wrap your await
 async function mySpecialRequestCat(url){
