@@ -3,8 +3,6 @@
 <!-- A one sentence description of the project or assignment -->
 ## This is a project is a Website were the user can vote between four options for their favorite animal. 
 
-
-
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/11.png" width="60%">
 
 <!-- It is good practice to add an about or summary -->
@@ -25,7 +23,7 @@ Postman - to manage your database
 Glitch - to deploy your website
 
 * To setup the project you need access to a computer and the internet. 
-* To be able to see the website you can go to [Glitch Website](link)
+* To be able to see the website you can go to [Glitch Website](https://themiscadiz-final-dwd.glitch.me/)
 * To use your terminal or command line to locally host your website (in case of Mac)
 * Download P5.js librarioes to run locally your p5 code. 
 
@@ -35,7 +33,7 @@ Glitch - to deploy your website
 ### Installation
 
 To acces or view the website their is not need to install or subscribe to a platform.
-To be able to see the website you can go to [Glitch Website](link)
+To be able to see the website you can go to [Glitch Website](https://themiscadiz-final-dwd.glitch.me/)
 
 <!-- Write instructions on how to start working on your project -->
 ### Develop
@@ -66,6 +64,9 @@ Create a Postman account to manage the database
 
 <!-- For your assignments you might consider  -->
 # Notes & Process
+
+Note: Because i did a lot of try and error, this project was developed in different Github repositories:
+See here other versions: [Final project with NeDB - (it host locally)](https://github.com/themiscadiz/Final-Project) 
 
 
 
@@ -196,7 +197,11 @@ My process is heavy in challenges. Sometimes I spend a lot of time figuring out 
 
 **Creating a new database using Nedb**
 
+Add documentation
+
 **Using Mongo DB**
+
+Add documentation
 
 **Deployment on Glitch**
 * Not sure exacly why, but this time Glitch giveme a really hard time uploading the git repo. The errors on Glitch are not super clear, so it was hard for me understant the source of the problem.
@@ -235,6 +240,9 @@ However, if I was going to deploy a voting system I have to develop and think ab
 ***
 
 ## References
+
+* [MongoDB Guide - Joey Lee and Cassie Tarakajian](https://github.com/itp-dwd/2020-spring/blob/master/guides/mongodb-guide.md)
+
 * [express api tutorial - Joey Lee](https://github.com/joeyklee/simple-express-api)
 
 * [Instance Container P5.js](https://p5js.org/examples/instance-mode-instance-container.html)
