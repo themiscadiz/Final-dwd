@@ -1,7 +1,7 @@
 <!-- Every README should start with an H1 -->
 # Final Project - Voting Website for your Favorite Animal
 <!-- A one sentence description of the project or assignment -->
-## This is a project is a Website were the user can vote between four options for their favorite animal. 
+## This is a project is a Website where the user can vote between four options for their favorite animal. 
 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/11.png" width="60%">
 
@@ -25,7 +25,7 @@ Glitch - to deploy your website
 * To setup the project you need access to a computer and the internet. 
 * To be able to see the website you can go to [Glitch Website](https://themiscadiz-final-dwd.glitch.me/)
 * To use your terminal or command line to locally host your website (in case of Mac)
-* Download P5.js librarioes to run locally your p5 code. 
+* Download P5.js libraries to run locally your p5 code. 
 
 
 
