@@ -243,6 +243,8 @@ However, if I was going to deploy a voting system I have to develop and think ab
 
 * [MongoDB Guide - Joey Lee and Cassie Tarakajian](https://github.com/itp-dwd/2020-spring/blob/master/guides/mongodb-guide.md)
 
+* [Database Services Guide - Joey Lee](https://github.com/itp-dwd/2020-spring/blob/master/guides/database-services-guide.md#mongodb-atlas)
+
 * [express api tutorial - Joey Lee](https://github.com/joeyklee/simple-express-api)
 
 * [Instance Container P5.js](https://p5js.org/examples/instance-mode-instance-container.html)
