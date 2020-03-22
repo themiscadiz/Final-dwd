@@ -137,6 +137,23 @@ One of the most challenging things in this part of the assignment was to update 
 
 After I was able to vote for two options I decided to work in a new version of the code were i started from the beggining crrating the database. Even althoug I was basically repeating some steps from previous assigments, it is always something new to figure it out how to make it works. 
 
+From NeDB to MongoDB
+
+I started this project using NeDB for create the database. My purpose was to have a better flow with my lasts assigment approach. However i try to upload to Glitch an Heroku this version and I had problems accesing the website. I suspect that the problem was around using P5js or how I create my database. I emailed the professor and concluded that to better understant the nature of the problem I need to make my database in MongoDB Atlas. I followed the two tutorials provided by the course:
+
+* [MongoDB Guide - Joey Lee and Cassie Tarakajian](https://github.com/itp-dwd/2020-spring/blob/master/guides/mongodb-guide.md)
+
+* [Database Services Guide - Joey Lee](https://github.com/itp-dwd/2020-spring/blob/master/guides/database-services-guide.md#mongodb-atlas)
+
+The trycky part of seting up the data base woth MongoDB was to figuri it out that I had to change the Schema to see the right result. befor I was seeing the wrong message to put it in the database. So i change the Schema to:
+
+<code>const todoSchema = new Schema({
+  "animal": String,
+  "votes": Number
+});</code>
+
+
+
 ### Adding new animals through Postman
 
 Because this step I haven't done it correctly before, it is always confusing how to add new object to the database. Thanks to the Postman tutorial it was more easy to add *key* and *values* to the object. Definetly was very satisfying see the information be update it into the database. 
@@ -154,9 +171,7 @@ I organized my html in section idetified mostly with Id's to make the buttons to
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/1.gif?raw=true" width="50%">
 
 
-### Adding a P5 canvas into the website
-
-**Motion in the P5 Sketch**
+**P5 Sketch**
 
 The first and easy approach to use a p5 canvas into your website is to embed the code from the P5 web editor.  However, I though because I am using Nedb locally I didn't have a way to call the api from the P5 web editor. I decided to work in a P5 sketch locally. 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/4.gif?raw=true" width="100%">
@@ -195,13 +210,9 @@ My process is heavy in challenges. Sometimes I spend a lot of time figuring out 
 
 * Make a more dynamic sketch using the variables from the database.
 
-**Creating a new database using Nedb**
+**Creating a database**
 
-Add documentation
-
-**Using Mongo DB**
-
-Add documentation
+Defenetly this was one of the most challenging and abstracts part of the project. Although my use of a database I concider to be simple, and has acces to multiple tutorials, it is another set of mind and how to interact with a system that I am not use to.
 
 **Deployment on Glitch**
 * Not sure exacly why, but this time Glitch giveme a really hard time uploading the git repo. The errors on Glitch are not super clear, so it was hard for me understant the source of the problem.
