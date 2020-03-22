@@ -27,99 +27,101 @@ window.addEventListener('DOMContentLoaded', async () => {
 // GET function using loadGet() | From Postman
 
 async function loadGet(){
-console.log("running loadGet")
+  console.log("running loadGet")
 
 
-// ????
-var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+  // ????
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
-var urlencoded = new URLSearchParams();
-urlencoded.append("animal", "dog");
-urlencoded.append("votes", "0");
+  var urlencoded = new URLSearchParams();
+  urlencoded.append("animal", "dog");
+  urlencoded.append("votes", "0");
 
-var requestOptions = {
-method: 'GET',
-headers: myHeaders,
-// body: urlencoded,
-redirect: 'follow'
-};
+  var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    // body: urlencoded,
+    redirect: 'follow'
+  };
 
 
-const data = await fetch("https://vote-for-pets.herokuapp.com/api/",requestOptions);
-const result = await data.json();
-console.log(result[0].votes);
+  const data = await fetch("/api/",requestOptions);
+  const result = await data.json();
+  // console.log(result);
 
-catCount = result[3].votes;
-dogCount = result[2].votes;
-birdCount = result[1].votes;
-fishCount = result[0].votes;
+  catCount = result[0].votes;
+  dogCount = result[1].votes;
+  birdCount = result[2].votes;
+  fishCount = result[3].votes;
 
-gotData = true;
+  gotData = true;
 
-showAllVotes();
+  showAllVotes();
 }
 
 
 ///
-const specialUrlCat = "https://vote-for-pets.herokuapp.com/api/tP9eCA3nl6VeJBu9"
+const specialUrlCat = "/api/5e7698eff41339db0c5e0f14"
 
-const specialUrlDog = "https://vote-for-pets.herokuapp.com/api/b4mkpyQp3c2zhcXd"
+const specialUrlDog = "/api/5e769cb990b622dbb789ae4e"
 
-const specialUrlBird = "https://vote-for-pets.herokuapp.com/api/aWq4oGUP71nivULK"
+const specialUrlBird = "/api/5e769cde90b622dbb789ae50"
 
-const specialUrlFish = "https://vote-for-pets.herokuapp.com/api/PMgfiYc84P0FZwDb"
+const specialUrlFish = "/api/5e769cc590b622dbb789ae4f"
 
 // define a custom function to wrap your await
 async function mySpecialRequestCat(url){
-try{
-  catCount++;
+  try{
+    catCount++;
 
-  const options = {
-    method: 'PUT',
-    headers: {
-      "Content-Type":"application/json"
-    },
-    body:JSON.stringify({
-      "votes" : catCount
-    })
-  }
+    const options = {
+      method: 'PUT',
+      headers: {
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        "votes" : catCount
+      })
+    }
 
     const data = await fetch(url,options);
     const result = await data.json();
 
     getVotesCat(result);
 
-} catch(err){
+  } 
+  catch(err){
     return err;
-}  
+  }  
 }
 
 // define a custom function to wrap your await
 async function mySpecialRequestDog(url){
-try{
-  // dogCount= dogCount+3;
-  dogCount++
-  
+  try{
+    // dogCount= dogCount+3;
+    dogCount++
+    
 
-  const options = {
-    method: 'PUT',
-    headers: {
-      "Content-Type":"application/json"
-    },
-    body:JSON.stringify({
-      "votes" : dogCount
-    })
-  }
+    const options = {
+      method: 'PUT',
+      headers: {
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        "votes" : dogCount
+      })
+    }
 
     const data = await fetch(url,options);
     const result = await data.json();
 
     getVotesDog(result);
 
-} catch(err){
-    return err;
-}  
+  } 
+  catch(err){
+      return err;
+  }  
 }
 
 
@@ -140,15 +142,15 @@ async function mySpecialRequestBird(url){
       })
     }
   
-      const data = await fetch(url,options);
-      const result = await data.json();
-  
-      getVotesBird(result);
+    const data = await fetch(url,options);
+    const result = await data.json();
+
+    getVotesBird(result);
   
   } catch(err){
       return err;
   }  
-  }
+}
 
 
 
@@ -169,15 +171,15 @@ async function mySpecialRequestFish(url){
       })
     }
   
-      const data = await fetch(url,options);
-      const result = await data.json();
-  
-      getVotesFish(result);
+    const data = await fetch(url,options);
+    const result = await data.json();
+
+    getVotesFish(result);
   
   } catch(err){
       return err;
   }  
-  }
+}
 
 
 
@@ -185,13 +187,13 @@ async function mySpecialRequestFish(url){
 
 async function getVotesCat(result){
 // console.log(result.message);
-catCount = result.message;
+  catCount = result.message;
 
-// showVotes = true; 
-showAllVotes(); 
+  // showVotes = true; 
+  showAllVotes(); 
 
-document.getElementById("voted__p").innerHTML = "You Voted for";
-document.getElementById("voted").innerHTML = "Cats!";
+  document.getElementById("voted__p").innerHTML = "You Voted for";
+  document.getElementById("voted").innerHTML = "Cats!";
 
 }
 
@@ -199,12 +201,12 @@ document.getElementById("voted").innerHTML = "Cats!";
 
 async function getVotesDog(result){
 // console.log(result.message);
-dogCount = result.message;
+  dogCount = result.message;
 
-// showVotes = true; 
-showAllVotes();
-document.getElementById("voted__p").innerHTML = "You Voted for";
-document.getElementById("voted").innerHTML = "Dogs!";
+  // showVotes = true; 
+  showAllVotes();
+  document.getElementById("voted__p").innerHTML = "You Voted for";
+  document.getElementById("voted").innerHTML = "Dogs!";
 
 }
 
@@ -256,15 +258,15 @@ document.getElementById("bird").addEventListener("click", function addVoteBird()
   // if(voteDog){  
       mySpecialRequestBird(specialUrlBird)
   // }
-  });
+});
 
-  document.getElementById("fish").addEventListener("click", function addVoteFish(){
+document.getElementById("fish").addEventListener("click", function addVoteFish(){
 
-    // if(voteDog){  
-        mySpecialRequestFish(specialUrlFish)
+  // if(voteDog){  
+      mySpecialRequestFish(specialUrlFish)
 
-    // }
-    });
+  // }
+});
 
 //Show Numbers on screen
 async function showAllVotes(){
@@ -273,8 +275,6 @@ async function showAllVotes(){
   document.getElementById("dogNum").innerHTML = dogCount;
   document.getElementById("birdNum").innerHTML = birdCount;
   document.getElementById("fishNum").innerHTML = fishCount;
-
-
 // }
 }
 
@@ -331,7 +331,7 @@ function setup() {
   window.document.getElementsByTagName('section')[2].appendChild(node);
   new p5(sketch, node);  
    
-  }
+}
 
 let sketch = function(p) {
   p.setup = function(){
