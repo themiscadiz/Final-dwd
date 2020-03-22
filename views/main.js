@@ -34,9 +34,9 @@ async function loadGet(){
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
-  var urlencoded = new URLSearchParams();
-  urlencoded.append("animal", "dog");
-  urlencoded.append("votes", "0");
+  // var urlencoded = new URLSearchParams();
+  // urlencoded.append("animal", "dog");
+  // urlencoded.append("votes", "0");
 
   var requestOptions = {
     method: 'GET',
@@ -71,10 +71,16 @@ const specialUrlBird = "/api/5e769cde90b622dbb789ae50"
 const specialUrlFish = "/api/5e769cc590b622dbb789ae4f"
 
 // define a custom function to wrap your await
+
+//call a function with the special url
+
 async function mySpecialRequestCat(url){
   try{
+
+    //Update the value of this variable
     catCount++;
 
+    // send to the backend the and update value of votes
     const options = {
       method: 'PUT',
       headers: {
@@ -84,10 +90,13 @@ async function mySpecialRequestCat(url){
         "votes" : catCount
       })
     }
-
+    //fetch and recieve the url with the value of vote, and storage in the data variable
     const data = await fetch(url,options);
+    
+    //converted into a json ans storage in result variable
     const result = await data.json();
 
+    // Send number of vote of a specific animal into the website
     getVotesCat(result);
 
   } 

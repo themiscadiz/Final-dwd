@@ -77,17 +77,22 @@ app.post("/api/", async (req, res) => {
   });
 
 // To UPDATE votes
-// PUT: "api/v1/todos:id"
-app.put("/api/:id", async (req, res) => {
-    // we get the id of the item we want from request.params.id ==> this matches the :id of the URL parameter
-    const selectedItemId = req.params.id;
+// PUT: "api/"
 
+// Recieving message from main.js (frontend)
+app.put("/api/:id", async (req, res) => {
+
+//store the id
+    const selectedItemId = req.params.id;
+//store the votes
     const updatedData = req.body;
-        
         
         try{
            
+            //communicating with the database, sending ID, and updating value and storage response in data variable
             const data = await todos.findOneAndUpdate({_id: selectedItemId}, updatedData, {new:true});
+            
+            //send response back to frontend (main.js)
             res.json(
                 {message: data.votes}
             )
