@@ -3,6 +3,9 @@
 <!-- A one sentence description of the project or assignment -->
 ## This is a project is a Website where the user can vote between four options for their favorite animal. 
 
+## Click below for watch Video
+[Video_Documentation](https://youtu.be/11yXDBP00xk "AnimalVoting - DWD")
+
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/11.png" width="60%">
 
 <!-- It is good practice to add an about or summary -->
@@ -244,9 +247,6 @@ However, if I was going to deploy a voting system I have to develop and think ab
 - Include a dash board were users can explore the information of the voting trends 
 
 <!-- References for resources and inspiration -->
-
-## Click below for watch Video
-[Video_Documentation](https://youtu.be/QHd9iiGpXCw "DWD Project")
 
 ***
 
