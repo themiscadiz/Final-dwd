@@ -1,7 +1,7 @@
 <!-- Every README should start with an H1 -->
 # Final Project - Voting Website for your Favorite Animal
 <!-- A one sentence description of the project or assignment -->
-## This is a project is a Website where the user can vote between four options for their favorite animal. 
+## This project is a Website where the user can vote between four options for their favorite animal. 
 
 ## Click below for watch Video
 [Video_Documentation](https://youtu.be/11yXDBP00xk "AnimalVoting - DWD")
@@ -10,7 +10,7 @@
 
 <!-- It is good practice to add an about or summary -->
 ## About
-The website start with a selection of four animals to choose. after you click in your favorite animal the user would be able to confirm that they already vote for a specidfic animal. Also, you can see how many votes each animal has in total an compare their percentage of cast votes to the other animals. The website use node.js to create the database and use persisten data. 
+The website starts with a selection of four animals to choose from. After you click on your favorite animal, the user will see a confirmation that they already voted for a specidfic animal. Also, you can see how many votes each animal has in total and compare their percentage of votes to the other animals. The website uses node.js to create the database and have persistent data. 
 
 <!-- It is essential to describe how to set up your project -->
 ## Setup
@@ -35,16 +35,15 @@ Glitch - to deploy your website
 <!-- any installation needs should be defined -->
 ### Installation
 
-To acces or view the website their is not need to install or subscribe to a platform.
-To be able to see the website you can go to [Glitch Website](https://themiscadiz-final-dwd.glitch.me/)
+To see the website you can go to [Glitch Website](https://themiscadiz-final-dwd.glitch.me/)
 
 <!-- Write instructions on how to start working on your project -->
 ### Develop
 **If you want to host this website locally:**
 
-1. Open and used Node.js through your Terminal.
+1. Open and use Node.js through your Terminal.
 2. Initialize node.js
-3. Install express, path, nodemon, nedb libraries using <code> npm install </code>
+3. Install express, path, nodemon libraries using <code> npm install </code>
 4. Use <code> .gitignore </code> for the folder that you dont want to make it public on Github if you plan to make a repository.
 5. Download P5.js libraries to run locally your p5 code. 
 
@@ -68,7 +67,7 @@ Create a Postman account to manage the database
 <!-- For your assignments you might consider  -->
 # Notes & Process
 
-Note: Because i did a lot of try and error, this project was developed in different Github repositories:
+Note: Because I did a lot of trial and error, this project was developed in different Github repositories:
 See here other versions: [Final project with NeDB - (it host locally)](https://github.com/themiscadiz/Final-Project) 
 
 
@@ -82,7 +81,7 @@ Mobile             |  Tablet  |  Desktop
 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/8.gif?raw=true" width="100%">
 
-In this design I had different challenges to acomplish during this process assignment. 
+I had different challenges to acomplish during this process assignment. 
 
 For my proposal a intended to: 
 
@@ -92,15 +91,15 @@ For my proposal a intended to:
 * Visualize in a graph the amount of votes per animal (P5 sketch) 
 * Open a window to confirm vote
 
-Although I didn't not completed all of my original goals (open a new window to confirm the vote), it was good for my process to make a clear path of priorities that I want to complete and what options did I have to get the main concept of the design. 
+Although I didn't not completed all of my original goals (open a new window to confirm the vote), it was good for my process to make a clear priorities that I wanted to complete and what options I had to get the main concept of the design. 
 
 ## Sketches
 
-In this experience sketchis was essential to understand form the beggining what were my design goal. this helps me to have a more deterministic approach when I was making the frontend of the website.
+In this experience sketches were essential to understand from the beggining what were my design goals. This helps me to have a more focused approach when I was making the frontend of the website.
 
 **Sketching**
 
-My first concept was to make a window that open to let the user confirm the vote that its casting. Because some other parts of the assigment took me more time that espected to make it work. I wasn't able to put this version in practice.
+My first concept was to make a window that opens to let the user confirm the vote that its casting. Because some other parts of the assigment took me more time that espected to make it work, I wasn't able to put this version in practice.
 
 Desktop             |  Mobile  
 :-------------------------:|:-------------------------:
@@ -108,25 +107,25 @@ Desktop             |  Mobile
 
 **Reiterate the Wireframes**
 
-However, the essence of that interaction is to confirm the vote. That is why i desided to just includ a messaje quen a person votet for a specific animal. The message said the animal that the user voted.
+However, the essence of that interaction is to confirm the vote. That is why I decided to just include a message when a person votes for a specific animal. The message indicates the animal that the user voted for.
 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/14.png?raw=true" width="50%">
 
 **Style Guide**
 
-The process of making my Style Guide helped me to visualize with anticipation, how I want to separe my sections to make it responsive. This give me clarity in the CSS development. Although that I applied also other measuramentes, I mostly used responsive width and height for my design.
+The process of making my Style Guide helped me to visualize with anticipation, how I want to separe my sections to make it responsive. This gives me clarity in the CSS development. Although I applied also other measuramentes, I mostly used responsive width and height for my design.
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/19.png?raw=true" width="100%">
 
 ## Development Process
 
-In this assignment I started creating the folders and dependencies for my database and communication with node.js. Although it is a setup step, I sometomes get confusse and always consult with the class material to make sure what steps to follow.
+In this assignment I started creating the folders and dependencies for my database and communication with node.js. Although it is a setup step, I sometimes get confused and consulted with the class material to make sure what steps to follow.
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/1.png?raw=true" width="50%">
 
 
 
 ### Accesing two objects for voting and creating a database in NeDB
 
-In this project a basically continued working on a concept that I was trying to achieve for previous assignments: Make possible to choose between multiple options. I knew that this exploration was going to be complicated so I started from were I leave my code last time, and using Nedb. In my process of learning I need to repeat the task, to be able to understanding it a little bit better each time. 
+I continued working on a concept that I was trying to achieve for previous assignments: Make possible to choose between multiple options. I knew that this exploration was going to be complicated so I started from were I left my code last time. In my process of learning I need to repeat the task, to be able to understanding it a little bit better each time. 
 
 Accesing Database from NeDB             |  .
 :-------------------------:|:-------------------------:
@@ -136,19 +135,19 @@ Accesing Database from NeDB             |  .
 :-------------------------:|:-------------------------:
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/9.png?raw=true" width="100%">  |  <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/10.png?raw=true" width="100%">
 
-One of the most challenging things in this part of the assignment was to update each animal in the database. Basically I used If statemets to pair the selected Item with the Id and update the number of votes.
+One of the most challenging things in this part of the assignment was to update each animal in the database. I used If statements to pair the selected Item with the Id and update the number of votes.
 
-After I was able to vote for two options I decided to work in a new version of the code were i started from the beggining crrating the database. Even althoug I was basically repeating some steps from previous assigments, it is always something new to figure it out how to make it works. 
+After I was able to vote for two options I decided to work in a new version of the code were I started from the beggining creating the database. Even though I was repeating some steps from previous assigments, it is always something new to figure it out how to make it work. 
 
 From NeDB to MongoDB
 
-I started this project using NeDB for create the database. My purpose was to have a better flow with my lasts assigment approach. However i try to upload to Glitch an Heroku this version and I had problems accesing the website. I suspect that the problem was around using P5js or how I create my database. I emailed the professor and concluded that to better understant the nature of the problem I need to make my database in MongoDB Atlas. I followed the two tutorials provided by the course:
+I started this project using NeDB for create the database. My purpose was to have a better flow with my last assigment approach. However, I tried to upload to Glitch and Heroku this version and I had problems accesing the website. I suspected that the problem was around using P5.js or how I created my database. I emailed the professor and concluded that to better understand the nature of the problem I need to make my database in MongoDB Atlas. I followed the two tutorials provided by the course:
 
 * [MongoDB Guide - Joey Lee and Cassie Tarakajian](https://github.com/itp-dwd/2020-spring/blob/master/guides/mongodb-guide.md)
 
 * [Database Services Guide - Joey Lee](https://github.com/itp-dwd/2020-spring/blob/master/guides/database-services-guide.md#mongodb-atlas)
 
-The trycky part of seting up the data base woth MongoDB was to figuri it out that I had to change the Schema to see the right result. befor I was seeing the wrong message to put it in the database. So i change the Schema to:
+The tricky part of setting up the database with MongoDB was figuring out that I had to change the Schema to see the right result. Before I was seeing the wrong message to put it in the database. So I changed the Schema to:
 
 <code>const todoSchema = new Schema({
   "animal": String,
@@ -159,33 +158,33 @@ The trycky part of seting up the data base woth MongoDB was to figuri it out tha
 
 ### Adding new animals through Postman
 
-Because this step I haven't done it correctly before, it is always confusing how to add new object to the database. Thanks to the Postman tutorial it was more easy to add *key* and *values* to the object. Definetly was very satisfying see the information be update it into the database. 
+Because this step I haven't done it correctly before, it is always confusing how to add new object to the database. Thanks to the Postman tutorial it was more easy to add *key* and *values* to the object. Definitely was very satisfying see the information be update it into the database. 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/8.png?raw=true" width="100%">
 
 
 ### HTML CSS and JS
 
-I started early in the process to work in the frontend of the website. Although I had previously make a similar design with multiples buttons, this time I was also making the website responsive. 
+I started early in the process to work on the frontend of the website. Although I had previously made a similar design with multipled buttons, this time I was also making the website responsive. 
 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/3.png?raw=true" width="50%">
 
-I organized my html in section idetified mostly with Id's to make the buttons to communicate with the main.js file and give it style in CSS file. I left and available "div" in the page for simulate the space were the P5 canvas it is going to be located. The to follow better what I am doing in the css i like to colored the divs ans section to understand how I manipulating the sections. 
+I organized my html in sections identified with Id's to make the buttons to communicate with the main.js file and give it style in CSS. I left an available "div" in the page to simulate the space were the P5 canvas it is going to be located. The to follow better what I am doing in the css i like to color the divs and section to understand how I manipulate the sections. 
 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/1.gif?raw=true" width="50%">
 
 
 **P5 Sketch**
 
-The first and easy approach to use a p5 canvas into your website is to embed the code from the P5 web editor.  However, I though because I am using Nedb locally I didn't have a way to call the api from the P5 web editor. I decided to work in a P5 sketch locally. 
+The first and easy approach to use a p5 canvas into your website is to embed the code from the P5 web editor.  However, I thought because I am using Nedb locally I didn't have a way to call the api from the P5 web editor. I decided to work in a P5 sketch locally. 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/4.gif?raw=true" width="100%">
-Originally I didn't have an intention to make and interactive visualization. but I was creating the graphics, I notices that using P5 for this, and not making interactive could be a lots opportunity to experiment. Having said that, during the process I didnt figuri it out how to feed the animation of the shapes with the data that I was recieving from the database. 
+Originally I didn't have an intention to make and interactive visualization. But I was creating the graphics, I noticed that using P5 for this, and not making interactive could be a lost opportunity to experiment. Having said that, during the process I didnt figure out how to feed the animation of the shapes with the data that I was recieving from the database. 
 
-I believe that the problem was around I wasn't able to update the data of the canvas without interfiring with the actual information of the animal votes. 
-Looking on the internet looks like I was trying to  when I pass a variable into a function didnt affect the outside variable. A friend told me that maybe I was trying to reference a variable, but i didnt figure it out how to make work in js. 
+I believe that the problem was that I wasn't able to update the data of the canvas without interferring with the actual information of the animal votes. 
+Looking on the internet looks like passing a variable into a function doesnt affect the outside variable. A friend told me that maybe I was trying to reference a variable, but I didnt figure it out how to make work in js. 
 
 <img src="https://github.com/themiscadiz/Images_for_Final_Project_Documentation/blob/master/Images/13.png?raw=true" width="50%">
 
-I decided to make circle to visualize each information of the animal. The size of each circle is relative to the percentage of votes. So if an animal recieve more of votes it circle would be bigger while other circle would be smallers. If your hover the mouse inside the circle you can see what percentege of the votes has that animal.
+I decided to make circle to visualize each information of the animal. The size of each circle is relative to the percentage of votes. So if an animal recieve more of votes it circle will be bigger while other circle would be smaller. If you hover the mouse inside the circle you can see what percentege of the votes that animal has.
 
 
 
@@ -194,34 +193,34 @@ I decided to make circle to visualize each information of the animal. The size o
 <!-- Any specific challenges or struggles documented -->
 ## Challenges & Struggles
 
-Because in general there is a lot of information to absorbe and apply during this process, I have to say that I encountered difficulties during each step of the development process. The hard part is not only ignore the reason why something didnt work, but also try to understant how sometimes you make it work. I think that that is the main reason that I feel that some challenges or struggles were to obscure to understand. 🙃
+Because in general there is a lot of information to absorbe and apply during this process, I have to say that I encountered difficulties during each step of the development process. The hard part is not only ignore the reason why something didnt work, but also try to understand how sometimes you make it work. I think that that is the main reason why I feel that some challenges or struggles were to obscure to understand. 🙃
 
-My process is heavy in challenges. Sometimes I spend a lot of time figuring out thing that i was hoping to be fast and easy. 
-**However, I noticed that things that were a challenge 3 weeks ago, this last time it wasn't. That give me hope!**
+My process is heavy in challenges. Sometimes I spent a lot of time figuring out things that I was hoping to be fast and easy. 
+**However, I noticed that things that were a challenge 3 weeks ago, this last time it weren't. That gives me hope!**
 
-### In this assigment the things that were more challenging were: 
+### The things that were more challenging were: 
 
 **Accesing file in outside folders**
 
-* I have difficulties referencing files outside the views folder. I researched about how to referencing this folder but i wasn't able to make work.
+* I still have difficulties referencing files outside the views folder. I researched about how to referencing this folder but I wasn't able to make work.
 
 **P5 Integrated in the website**
 
-* Figuring out how to add a canvas in a specific area of the wesite. I found a P5 reference that helpme to achieve a specific location, but is not precise.
+* Figuring out how to add a canvas in a specific area of the wesite. I found a P5 reference that helped me to achieve a specific location, but is not precise.
 
-* Make a specific file for P5 js outside the main.js file. 
+* Make a specific file for P5.js outside the main.js file. 
 
 * Make a more dynamic sketch using the variables from the database.
 
 **Creating a database**
 
-Defenetly this was one of the most challenging and abstracts part of the project. Although my use of a database I concider to be simple, and has acces to multiple tutorials, it is another set of mind and how to interact with a system that I am not use to.
+Definitely this was the most challenging and abstract part of the project. Although my use of a database I consider to be simple, and have access to multiple tutorials, it is another state of mind and how to interact with a system that I am not used to.
 
 **Deployment on Glitch**
-* Not sure exacly why, but this time Glitch giveme a really hard time uploading the git repo. The errors on Glitch are not super clear, so it was hard for me understant the source of the problem.
+* Not sure exacly why, but this time Glitch gave me a really hard time uploading the git repo. The errors on Glitch are not super clear, so it was hard for me understand the source of the problem.
 
 **Trying Heroku**
-* I tried to deployd my website on Herocu and also gave me errors.
+* I tried to deploy my website on Heroku and also gave me errors.
 
 Heroku screenshots             |  Heroku screenshots  
 :-------------------------:|:-------------------------:
@@ -231,7 +230,7 @@ Heroku screenshots             |  Heroku screenshots
 <!-- Any questions you have -->
 
 ## Next Steps
-For this project I build a simple voting system. I am not sure is a get this idea because we are in presidential election year, but I consider that this project give the fundaments to explore  better how to build and use database and how to store different type of information added by the user. Definetly was a fun concept to apporach a full dynamic web!
+For this project I built a simple voting system. Maybe I got this idea because we are in presidential election year, but I consider that this project give the fundaments to explore how to build and use adatabase and how to store different type of information added by the user. Definitely was a fun concept to approach a fully dynamic website!
 
 However, if I was going to deploy a voting system I have to develop and think about solutions for this next steps:
 
@@ -241,10 +240,10 @@ However, if I was going to deploy a voting system I have to develop and think ab
 - Make the database secure and secure privacy
 
 * **Administrator Experience** 
-- it would be interesting to develope an area were an admin can support the system of follor some trend of the voting experience.
+- it would be interesting to develope an area were an admin can support the system and analyze the data.
 
 * **Analytics** 
-- Include a dash board were users can explore the information of the voting trends 
+- Include a dashboard were users can explore the information of the voting trends 
 
 <!-- References for resources and inspiration -->
 
